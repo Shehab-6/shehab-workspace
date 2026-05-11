@@ -33,3 +33,16 @@ body {
     --dg-graph-label-color: #ffffff !important;      /* لون أسماء النقاط (أبيض ناصع) */
     --text-accent: #f39c12 !important;               /* توحيد لون الروابط مع الخريطة */
 }
+/* إجبار إظهار أسماء الخريطة الذهنية وتكبير الخط */
+body {
+    --dg-graph-label-size: 14px !important; /* تكبير الحجم الأساسي للخط */
+}
+
+#graph-container text, 
+.graph-view text, 
+svg text {
+    opacity: 1 !important; /* منع الموقع من إخفاء النص عند التصغير */
+    visibility: visible !important;
+    font-size: 14px !important; /* تكبير الخط */
+    font-weight: bold !important; /* جعل الخط سميكاً وواضحاً */
+}
