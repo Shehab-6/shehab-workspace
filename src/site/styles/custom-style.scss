@@ -11,3 +11,18 @@ body {
     //   color: black;
     //  }
 }
+/* ضبط اتجاه الموقع للغة العربية */
+.content {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+/* ضبط النقاط والقوائم */
+.content ul, .content ol {
+    padding-right: 2em !important;
+    padding-left: 0 !important;
+}
+
+.content li {
+    text-align: right !important;
+}
